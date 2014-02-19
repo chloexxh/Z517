@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.text.NumberFormat;
 
@@ -25,6 +24,8 @@ public class L1_ComputeInterest extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
+	 
+	 // Edit from web
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
