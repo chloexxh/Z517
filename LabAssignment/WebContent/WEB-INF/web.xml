@@ -19,4 +19,24 @@
     <servlet-name>L1_ComputeInterest</servlet-name>
     <url-pattern>/L1_ComputeInterest</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>L1_ComputeSavings</display-name>
+    <servlet-name>L1_ComputeSavings</servlet-name>
+    <servlet-class>L1_ComputeSavings</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>L1_ComputeSavings</servlet-name>
+    <url-pattern>/L1_ComputeSavings</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>L2_SalesMethods</display-name>
+    <servlet-name>L2_SalesMethods</servlet-name>
+    <servlet-class>L2_SalesMethods</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>L2_SalesMethods</servlet-name>
+    <url-pattern>/L2_SalesMethods</url-pattern>
+  </servlet-mapping>
 </web-app>
