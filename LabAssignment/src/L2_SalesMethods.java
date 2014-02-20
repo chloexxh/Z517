@@ -48,24 +48,14 @@ public class L2_SalesMethods extends HttpServlet {
 		out.println("</table></form></body></html>");
 	}
 
-	public static double computeBookPrice(int booknumber) {
-		double bookprice;
-		if (booknumber >= 3) {
-			bookprice = 20 * booknumber * 0.9;
+	public static double computePrice(int number, double price, double rate) {
+		double subtotal;
+		if (number >= 3) {
+			subtotal = price * number * rate;
 		} else {
-			bookprice = 20 * booknumber;
+			subtotal = price * number;
 		}
-		return bookprice;
-	}
-
-	public static double computeMagPrice(int magnumber) {
-		double magprice;
-		if (magnumber >= 3) {
-			magprice = 3 * magnumber * 0.95;
-		} else {
-			magprice = 3 * magnumber;
-		}
-		return magprice;
+		return subtotal;
 	}
 
 	/**
@@ -95,8 +85,8 @@ public class L2_SalesMethods extends HttpServlet {
 			numofmag = Integer.parseInt(request.getParameter("numofmag"));
 		}
 		// method computePrice
-		bookprice = computeBookPrice(numofbooks);
-		magprice = computeMagPrice(numofmag);
+		bookprice = computePrice(numofbooks,20,0.09);
+		magprice = computePrice(numofmag,3,0.095);
 		totalprice = bookprice + magprice;
 		// Output
 		NumberFormat currencyFormatter = NumberFormat

@@ -66,7 +66,7 @@ public class L1_ComputeInterest extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// Need 3 variables to compute final balance
-		double balance, yearlyinterest = 0.0, annualInvestment;
+		double balance, yearlyinterest = 0.0, annualInvestment=0.0;
 		int numyears = 0;
 		// Create HTML page for results
 		response.setContentType("text/html");
@@ -75,12 +75,11 @@ public class L1_ComputeInterest extends HttpServlet {
 		out.println("<title>Result</title></head><body>");
 		out.println("<h2>Compute result:</h2>");
 		// get savings amount and number of years from user
-		balance = Double.parseDouble(request.getParameter("initialbalance"));
 		numyears = Integer.parseInt(request.getParameter("years"));
-		annualInvestment = Double.parseDouble(request
-				.getParameter("annualinvestment"));
+		balance = Double.parseDouble(request.getParameter("initialbalance"));
+		annualInvestment = Double.parseDouble(request.getParameter("annualinvestment"));
 		// compute 5% interest each year and add to balance
-		for (int i = 1; i <= numyears; i++) {
+		for (int j = 1; j <= numyears; j++) {
 			yearlyinterest = balance * 0.05;
 			balance = balance + yearlyinterest + annualInvestment;
 		}
