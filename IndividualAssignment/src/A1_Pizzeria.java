@@ -121,7 +121,7 @@ public class A1_Pizzeria extends HttpServlet {
 				+ ".bordertop{border-top:1px solid #000;}"
 				+ "</style></head>");
 		out.println("<body><div id=\"background\"><div id=\"ordertitle\"><h2>Order Summary</h2></div>");
-		// get number of items from user
+		// get number of items from user and calculate order number
 		String numbername[] = { "numoflarche", "numofmedche", "numoflarpep","numofmedpep", "numofbuf" };
 		int itemnumber[] = { numoflarche, numofmedche, numoflarpep, numofmedpep, numofbuf };
 		for (int i=0;i<numbername.length;i++) {
