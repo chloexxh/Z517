@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * Xiaoxu Hu
  * Servlet implementation class A1_Pizzeria
  */
 public class A1_Pizzeria extends HttpServlet {
@@ -22,6 +23,10 @@ public class A1_Pizzeria extends HttpServlet {
 	}
 
 	/**
+	 * Xiaoxu Hu
+	 * This program is designed for an online pizza restaurant.
+	 * Customers can order and then see the order summary.
+	 * doGet() will get the information about the number of each items
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
@@ -91,6 +96,9 @@ public class A1_Pizzeria extends HttpServlet {
 	}
 
 	/**
+	 * Xiaoxu Hu
+	 * doPost() compute the final price.
+	 * If customers do not type in the number or negative number, there is a warning information.
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
