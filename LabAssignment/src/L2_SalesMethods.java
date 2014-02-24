@@ -85,8 +85,8 @@ public class L2_SalesMethods extends HttpServlet {
 			numofmag = Integer.parseInt(request.getParameter("numofmag"));
 		}
 		// method computePrice
-		bookprice = computePrice(numofbooks,20,0.09);
-		magprice = computePrice(numofmag,3,0.095);
+		bookprice = computePrice(numofbooks,20,0.9);
+		magprice = computePrice(numofmag,3,0.95);
 		totalprice = bookprice + magprice;
 		// Output
 		NumberFormat currencyFormatter = NumberFormat
