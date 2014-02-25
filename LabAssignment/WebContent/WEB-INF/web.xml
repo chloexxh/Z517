@@ -59,4 +59,14 @@
     <servlet-name>TableDisplayDynamicArray</servlet-name>
     <url-pattern>/TableDisplayDynamicArray</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>L3_TableDisplayDynamicArray</display-name>
+    <servlet-name>L3_TableDisplayDynamicArray</servlet-name>
+    <servlet-class>L3_TableDisplayDynamicArray</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>L3_TableDisplayDynamicArray</servlet-name>
+    <url-pattern>/L3_TableDisplayDynamicArray</url-pattern>
+  </servlet-mapping>
 </web-app>

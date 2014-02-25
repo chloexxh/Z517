@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TableDisplayDynamicArray
  */
-public class TableDisplayDynamicArray extends HttpServlet {
+public class L3_TableDisplayDynamicArray extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public TableDisplayDynamicArray() {
+	public L3_TableDisplayDynamicArray() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
