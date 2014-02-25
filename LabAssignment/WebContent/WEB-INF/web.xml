@@ -39,4 +39,24 @@
     <servlet-name>L2_SalesMethods</servlet-name>
     <url-pattern>/L2_SalesMethods</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>L3_TableDisplay</display-name>
+    <servlet-name>L3_TableDisplay</servlet-name>
+    <servlet-class>L3_TableDisplay</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>L3_TableDisplay</servlet-name>
+    <url-pattern>/L3_TableDisplay</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TableDisplayDynamicArray</display-name>
+    <servlet-name>TableDisplayDynamicArray</servlet-name>
+    <servlet-class>TableDisplayDynamicArray</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TableDisplayDynamicArray</servlet-name>
+    <url-pattern>/TableDisplayDynamicArray</url-pattern>
+  </servlet-mapping>
 </web-app>
