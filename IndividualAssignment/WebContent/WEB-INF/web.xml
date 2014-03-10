@@ -19,4 +19,14 @@
     <servlet-name>A1_Pizzeria</servlet-name>
     <url-pattern>/A1_Pizzeria</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>A2_election</display-name>
+    <servlet-name>A2_election</servlet-name>
+    <servlet-class>A2_election</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A2_election</servlet-name>
+    <url-pattern>/A2_election</url-pattern>
+  </servlet-mapping>
 </web-app>
